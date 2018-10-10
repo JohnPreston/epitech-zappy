@@ -1,0 +1,421 @@
+
+lib/my_getnbr.c,23
+int		my_getnbr(13,248
+
+lib/my_memset.c,35
+void		*my_memset(my_memset11,231
+
+lib/my_put_tools.c,99
+void		my_putchar(14,275
+void		my_putstr(19,324
+void		my_puterror(24,389
+void		my_putnbr(29,456
+
+lib/my_strcat.c,142
+char		*my_strcat(my_strcat13,248
+char		*my_strcat2(my_strcat240,650
+char		*my_strncat(my_strncat68,1102
+char		*replace(replace80,1314
+
+lib/my_strcmp.c,47
+int		my_strcmp(14,268
+int		my_strncmp(34,564
+
+lib/my_strcpy.c,125
+void		my_strcpy(11,231
+void		my_strncpy(26,385
+void		my_strcpy2(41,546
+void		my_strcpy3(56,714
+void		my_strcpy4(83,1017
+
+lib/my_strdup.c,146
+char		*my_strdup(my_strdup14,268
+char		*my_strdup2(my_strdup225,444
+char		*my_strdup3(my_strdup336,637
+char		*my_strdup4(my_strdup447,830
+
+lib/my_strlen.c,71
+int		my_strlen(11,231
+int		my_strlen2(23,353
+int		my_strlen3(35,489
+
+lib/my_xfree.c,110
+void		*my_xfree(my_xfree14,272
+char		*my_xxfree(my_xxfree24,378
+char		**my_xfree_tab(my_xfree_tab34,485
+
+lib/my_xmalloc.c,76
+void		*my_xmalloc(my_xmalloc14,270
+void		*my_xxmalloc(my_xxmalloc25,434
+
+lib/tab_tools.c,49
+void		my_show_tab(14,268
+int		my_tablen(30,439
+
+lib/tab_functions.c,66
+char		**delete_first_elem_in_tab(delete_first_elem_in_tab14,276
+
+tools/tools_chars.c,219
+t_chars				*create_char(create_char17,345
+t_chars				*add_char(add_char34,659
+t_chars				*delete_first_char(delete_first_char49,880
+void				control_nb_players(63,1124
+t_chars				*delete_char(delete_char70,1265
+
+tools/chars_specials.c,63
+void				char_takes_ghost(19,385
+void				init_new_char(34,718
+
+tools/tools_teams.c,82
+t_teams				*create_team(create_team16,331
+t_teams				*add_team(add_team32,658
+
+tools/tools.c,88
+void				calc_next_eat(19,377
+void				set_eat_time(39,853
+void				init_invent(52,1134
+
+tools/time_diff.c,27
+int			time_is_gone(17,352
+
+tools/random_functions.c,79
+int			random_dir(16,311
+int			random_pos_x(25,425
+int			random_pos_y(34,562
+
+tools/my_xfunctions.c,97
+int			my_xread(15,312
+int			my_xwrite(25,482
+int			my_xclose(35,659
+int			my_strisnum(45,789
+
+tools/my_xfunctions_network.c,76
+SOCKET			my_xsocket(20,416
+int			my_xbind(30,592
+int			my_xlisten(43,821
+
+tools/my_xfunctions_network_2.c,80
+int			my_xaccept(20,417
+int			my_xconnect(31,623
+int			my_xsetsockopt(45,863
+
+src/build/check_options.c,150
+static t_options	gl_options[gl_options19,391
+int			check_teams(29,777
+int			check_options(39,947
+int			man(68,1541
+int			check_cmd_line(75,1708
+
+src/build/net_setters.c,59
+void			set_net_port(16,328
+void			set_max_clients(21,434
+
+src/build/map_setters.c,83
+void			set_map_x(17,346
+void			set_map_y(22,450
+void			set_map_time_unit(27,554
+
+src/build/build_map.c,125
+int			set_ressource(17,345
+void			init_ressource(28,489
+t_case			**alloc_case(alloc_case39,780
+void			init_case(55,1056
+
+src/build/build_teams.c,107
+static int		count_teams(17,329
+static t_teams		*init_teams(init_teams31,521
+void			build_teams(48,1007
+
+src/build/build_zappy.c,94
+t_options			gl_options[gl_options17,330
+void				build_from_cmd(27,544
+int				build(48,912
+
+src/networking/send_datas.c,26
+void			send_datas(16,323
+
+src/networking/init_net.c,54
+int			init_sockets(16,318
+int			init_socket(35,1087
+
+src/networking/gere_clients.c,54
+void			player_deco(16,327
+void			gere_client(28,554
+
+src/networking/loop.c,73
+void			init_serv(20,399
+void			init_clients(28,595
+void			loop(46,880
+
+src/networking/accept_client.c,89
+int			send_welcome(16,351
+void			add_client_on_waitin(26,517
+void			add_client(36,728
+
+src/networking/check_clients.c,97
+void			check_clients(16,318
+void			dump_actions_list(38,677
+void			check_clients_tasks(53,983
+
+src/networking/check_death.c,95
+int			check_ghost_death(16,314
+int			check_players_death(41,832
+void			check_deaths(66,1345
+
+src/networking/check_team.c,170
+t_teams			*team_name_ok(team_name_ok16,323
+int			team_capacity_ok(30,521
+void			put_char_in_team(43,752
+int			control_team_ghosts(58,1040
+void			check_team(82,1530
+
+src/networking/check_incants.c,63
+void			check_incants_time(16,318
+void			check_incants(31,625
+
+src/rfc_graph/rfc_graph_parsing.c,267
+typedef struct		s_rfc_graph16,314
+  int			id;18,344
+  int			nb_args;19,356
+  char			*name;name20,373
+  char			*flag;flag21,389
+  void			(*func)func22,405
+}			t_rfc_graph;26,495
+t_rfc_graph			gl_rfc_graph[gl_rfc_graph28,513
+void			parser_rfc_graph(41,990
+
+src/rfc_graph/graph_first_connect.c,132
+static void		all_players(16,340
+static void		all_eggs(40,874
+static void		all_graphs(64,1405
+void			graph_first_connect(77,1609
+
+src/rfc_graph/rfc_graph_bct.c,101
+static void		check_and_send(20,403
+void			rfc_graph_bct(41,1005
+void			rfc_graph_bct_serv(68,1473
+
+src/rfc_graph/rfc_graph_ebo.c,29
+void			rfc_graph_ebo(14,284
+
+src/rfc_graph/rfc_graph_edi.c,29
+void			rfc_graph_edi(14,284
+
+src/rfc_graph/rfc_graph_eht.c,29
+void			rfc_graph_eht(13,281
+
+src/rfc_graph/rfc_graph_enw.c,29
+void			rfc_graph_enw(14,284
+
+src/rfc_graph/rfc_graph_mct.c,100
+static void		check_and_send(17,336
+void			rfc_graph_mct(43,969
+void			rfc_graph_mct_serv(60,1247
+
+src/rfc_graph/rfc_graph_msz.c,63
+void			rfc_graph_msz(17,346
+void			rfc_graph_msz_serv(34,655
+
+src/rfc_graph/rfc_graph_pbc.c,29
+void			rfc_graph_pbc(14,284
+
+src/rfc_graph/rfc_graph_pdi.c,29
+void			rfc_graph_pdi(14,282
+
+src/rfc_graph/rfc_graph_pdr.c,29
+void			rfc_graph_pdr(15,300
+
+src/rfc_graph/rfc_graph_pex.c,29
+void			rfc_graph_pex(14,284
+
+src/rfc_graph/rfc_graph_pfk.c,29
+void			rfc_graph_pfk(14,284
+
+src/rfc_graph/rfc_graph_pgt.c,29
+void			rfc_graph_pgt(14,284
+
+src/rfc_graph/rfc_graph_pic.c,66
+static void		players_on_case(14,284
+void			rfc_graph_pic(43,934
+
+src/rfc_graph/rfc_graph_pie.c,29
+void			rfc_graph_pie(14,284
+
+src/rfc_graph/rfc_graph_pin.c,164
+static int		get_player_id(16,316
+void			print_inventory(32,590
+void			rfc_graph_pin(43,1017
+static void		all_players(70,1501
+void			rfc_graph_pin_serv(96,2173
+
+src/rfc_graph/rfc_graph_plv.c,98
+static int		get_player_id(16,316
+void			rfc_graph_plv(32,590
+void			rfc_graph_plv_serv(62,1103
+
+src/rfc_graph/rfc_graph_pnw.c,29
+void			rfc_graph_pnw(15,302
+
+src/rfc_graph/rfc_graph_ppo.c,98
+static int		get_player_id(16,316
+void			rfc_graph_ppo(32,590
+void			rfc_graph_ppo_serv(60,1111
+
+src/rfc_graph/rfc_graph_sbp.c,29
+void			rfc_graph_sbp(14,284
+
+src/rfc_graph/rfc_graph_seg.c,29
+void			rfc_graph_seg(14,284
+
+src/rfc_graph/rfc_graph_sgt.c,63
+void			rfc_graph_sgt(16,316
+void			rfc_graph_sgt_serv(24,515
+
+src/rfc_graph/rfc_graph_smg.c,29
+void			rfc_graph_smg(14,284
+
+src/rfc_graph/rfc_graph_sst.c,29
+void			rfc_graph_sst(16,316
+
+src/rfc_graph/rfc_graph_suc.c,29
+void			rfc_graph_suc(14,284
+
+src/rfc_graph/rfc_graph_tna.c,63
+void			rfc_graph_tna(16,316
+void			rfc_graph_tna_serv(44,786
+
+src/rfc_graph/str_to_parser.c,115
+int		char_ok(14,288
+char		*fill_tab(fill_tab25,440
+int		nb_words(42,771
+char		**str_parser(str_parser67,1078
+
+src/rfc_player/rfc_player_parsing.c,359
+typedef struct			s_player19,394
+  int				id;21,422
+  int				time_coeff;22,435
+  char				*flag;flag23,456
+  void				(*func)func24,473
+  int				(*check)check25,528
+}				t_player;26,583
+static t_player			gl_player[gl_player28,599
+void				do_action(45,1264
+int				check_func(75,1936
+int				check_func_2(91,2316
+void				rfc_player_parsing(108,2740
+
+src/rfc_player/rfc_player_avance.c,33
+void			rfc_player_avance(17,346
+
+src/rfc_player/rfc_player_right.c,32
+void			rfc_player_right(17,346
+
+src/rfc_player/rfc_player_fork.c,107
+t_chars			*create_egg(create_egg21,425
+void			rfc_player_exclose(41,811
+void			rfc_player_fork(55,1118
+
+src/rfc_player/rfc_player_left.c,31
+void			rfc_player_left(17,346
+
+src/rfc_player/rfc_player_invent.c,33
+void			rfc_player_invent(17,346
+
+src/rfc_player/rfc_player_connect_nbr.c,38
+void			rfc_player_connect_nbr(15,319
+
+src/rfc_player/rfc_player_see.c,143
+static t_map_		gl_map_[gl_map_16,320
+char		*concat_objs(concat_objs28,661
+char			*one_case(one_case43,876
+void			rfc_player_see(72,1347
+
+src/rfc_player/rfc_player_see_func_1.c,155
+int			there_is_food(16,323
+int			there_is_linemate(25,526
+int			there_is_deraumere(34,723
+int			there_is_sibur(43,925
+int			there_is_mendiane(52,1121
+
+src/rfc_player/rfc_player_see_func_2.c,92
+int			there_is_phiras(16,323
+int			there_is_thystame(25,510
+int			there_is_player(34,707
+
+src/rfc_player/rfc_player_see_dirs_func.c,162
+int			func(16,324
+char			*see_north(see_north25,440
+char			*see_south(see_south54,996
+char			*see_west(see_west83,1552
+char			*see_east(see_east112,2107
+
+src/rfc_player/rfc_player_prend.c,152
+static t_ressource		gl_ressource_prend[gl_ressource_prend17,346
+void			add_food(28,635
+void			add_linemate(42,1002
+void			rfc_player_prend(56,1363
+
+src/rfc_player/rfc_player_pose.c,151
+static t_ressource		gl_ressource_pose[gl_ressource_pose17,343
+void				put_food(28,631
+void				put_linemate(42,956
+void				rfc_player_pose(56,1279
+
+src/rfc_player/rfc_player_broadcast.c,98
+static char		*make_msg(make_msg16,321
+void			deploy(26,449
+void			rfc_player_broadcast(50,939
+
+src/rfc_player/rfc_player_incantation.c,64
+void			popup_food(17,345
+void			rfc_player_incantation(36,606
+
+src/rfc_player/rfc_player_expulse.c,117
+void			expulse(16,317
+void			give_dir(39,1013
+static void		send_answer(62,1502
+void			rfc_player_expulse(76,1764
+
+src/rfc_player/broadcast.c,53
+int			get_direct(14,277
+int			direct_4_char(41,980
+
+src/rfc_player/add_ressource.c,139
+void			add_deraumere(17,341
+void			add_sibur(31,710
+void			add_mendiane(45,1063
+void			add_phiras(59,1428
+void			add_thystame(73,1785
+
+src/rfc_player/put_ressource.c,138
+void			put_deraumere(17,341
+void			put_sibur(31,667
+void			put_mendiane(45,977
+void			put_phiras(59,1299
+void			put_thystame(73,1613
+
+src/incantation/check_can_incant.c,165
+static t_elevation	gl_incant[gl_incant17,344
+int			check_nb_players(28,607
+int			check_incant(52,1041
+int			can_incant(69,1644
+void			check_incant_end(96,2075
+
+src/incantation/incant_end.c,53
+void			level_up(16,322
+void			incant_failed(41,838
+
+src/incantation/create_incantation.c,28
+int			create_incant(17,330
+
+src/exec_actions/actions_tools.c,169
+static void		calc_time(20,414
+t_actions		*create_action(create_action39,839
+t_actions		*add_action(add_action68,1493
+t_actions		*depop_action(depop_action86,1789
+
+src/zappy_main/destroy_zappy.c,29
+void			destroy_zappy(16,317
+
+src/zappy_main/zappy.c,19
+int			main(16,301
